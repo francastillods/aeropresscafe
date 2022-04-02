@@ -1,24 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export const ImgWebp = ( { jpgSrc, imgAlt } ) => {
+export const ImgWebp = ( { imgSrcSet, imgAlt } ) => {
 
-  const [imgPath, imgExtension ] = jpgSrc.split('.');
+  const [imgSrc, ] = imgSrcSet.split(' ');
+  const [ , extension,   ] = imgSrc.split('.');
 
-  if (imgExtension !== 'jpg') { console.error('JpgSrc has to be a JPG'); }
+  if( extension !== 'jpg') {
+   
+    return console.error('ImgWebp Component: imgSrcSet expect a string with different .jpg path and width. Example: "image600.jpg 600w, image400.jpg 400w"');
+  
+  } else {
 
-  return (
-      <>
-        <picture>
-            <source srcSet={ imgPath + '.webp' } type="image/webp" alt={ imgAlt }  />
-            <source srcSet={ jpgSrc } type="image/jpeg"  alt={ imgAlt } /> 
-            <img src={ jpgSrc } alt={ imgAlt } />
-        </picture>
-      </>
-  )
+    const webpSrcSet = imgSrcSet.replace(/jpg/g, 'webp'); 
+
+    return (
+        <>
+          <picture>
+              <source type="image/webp" srcSet={ webpSrcSet } alt={ imgAlt } />
+              <source type="image/jpeg" srcSet={ imgSrcSet } alt={ imgAlt } /> 
+              <img src={ imgSrc } alt={ imgAlt } />
+          </picture>
+        </>
+    )
+
+  }
 }
 
 ImgWebp.propTypes = {
-  jpgSrc: PropTypes.string.isRequired,
+  imgSrcSet: PropTypes.string.isRequired,
   imgAlt: PropTypes.string
 }

@@ -1,0 +1,16 @@
+.header-product {
+    width: 100%;
+    overflow: hidden;
+    h1 {
+        color:red;
+    }
+    picture {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .header-product_info {
+        position: absolute;
+        top: 2rem;
+    }
+}
