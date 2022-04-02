@@ -1,0 +1,6 @@
+@use '../styles/abstract/abstract' as *;
+
+.container {
+    margin: 0 auto;
+    max-width: $size-key * 21rem;
+}

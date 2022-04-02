@@ -1,0 +1,21 @@
+@use 'abstract/abstract' as *;
+
+
+button,
+.btn {
+    background-color: var(--white);
+    border-radius: to-rem($size-key);
+    border: solid 2px var(--primary);
+    color: var(--primary);
+    cursor: pointer;
+    font-size: to-rem($font-body-lg);
+    font-weight: 700;
+    padding: to-rem($size-key * 2) to-rem($size-key * 4);
+    text-decoration: none;
+    width: auto;
+
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
