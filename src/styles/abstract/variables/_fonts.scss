@@ -1,8 +1,12 @@
 @use 'size-key' as *;
-$font-family-primary: 'Inter', Arial, sans-serif;
+$font-title: 'Inter', Arial, sans-serif;
+$font-body: 'Roboto', sans-serif;
 
 $font-heading-xl: $size-key * 10.5; // 42
 $font-heading-lg: $size-key * 9; // 36
+$font-heading-md: $size-key * 8; // 32
+$font-heading-sm: $size-key * 6; // 24
+$font-heading-xs: $size-key * 4.5; // 18
 
 $font-body-base: $size-key * 4; // 16
 $font-body-lg: $size-key * 4.5; // 18

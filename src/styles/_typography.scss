@@ -1,4 +1,6 @@
 @use 'abstract/abstract' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @font-face {
 	font-family: "Inter";
 	src: url("../asstes/fonts/inter/Inter-Regular.ttf") format("truetype");
@@ -6,18 +8,50 @@
 
 *,
 body {
-    font-family: $font-family-primary;
+    font-family: $font-body;
 	line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: var(--color-dark);
+	font-family: $font-title;
+	font-weight: bold;
+}
+
 h1 {
-	color: var(--dark);
 	font-size: to-rem($font-heading-lg);
 	
 	@include for-phone-only {
 		font-size: to-rem($font-heading-lg);
 	}
-	@include for-tablet-landscape-up {
+	@include for-desktop-up {
 		font-size: to-rem($font-heading-xl);
+	}
+}
+
+h2 {
+	font-size: to-rem($font-heading-sm);
+	text-align: center;
+	
+	@include for-phone-only {
+		font-size: to-rem($font-heading-sm);
+	}
+	@include for-desktop-up {
+		font-size: to-rem($font-heading-lg);
+	}
+}
+
+h3 {
+	//font-size: to-rem($font-heading-sm);
+
+	@include for-tablet-landscape-up {
+		font-size: to-rem($font-heading-xs);
+	}
+	@include for-desktop-up {
+		font-size: to-rem($font-heading-sm);
 	}
 }

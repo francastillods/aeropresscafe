@@ -1,0 +1,38 @@
+@use '../../styles/abstract/abstract' as *;
+
+.card-step {
+    height: auto;
+    width: to-rem( $size-key * 82 );
+    background-color: var(--color-grey-light);
+    margin: to-rem( $size-key * 4) to-rem( $size-key * 8);
+
+    @include for-tablet-portrait-up {
+        flex: 0 0 auto;
+    }
+
+    h5 {
+        align-items: center;
+        background-color: var( --color-secondary );
+        border-radius: to-rem( $size-key * 100 );
+        display: flex;
+        font-size: to-rem( $font-heading-sm );
+        height: to-rem( $size-key * 10);
+        justify-content: center;
+        left: to-rem( $size-key * -5 );
+        margin: 0;
+        position: relative;
+        top: to-rem( $size-key * -5 );
+        width: to-rem( $size-key * 10);
+    }
+
+    img {
+        mix-blend-mode: multiply;
+    }
+
+    h3 {
+        text-align: center;
+        min-height: to-rem( $size-key * 18 );
+        padding: 0 to-rem( $size-key * 4 );
+        text-overflow: clip;
+    }
+}

@@ -5,15 +5,15 @@
     width: 100%;
 
     .header-cta_wrapper {
-        position:fixed;
-        top:0;
         margin: 0 auto;
+        position:absolute;
+        top:0;
     }
 
     svg {
+        padding-top: to-rem($size-key * 4);
         position: relative;
         z-index: 999;
-        padding-top: to-rem($size-key * 4);
 
         @include for-phone-only {
             display: block;
@@ -53,8 +53,10 @@
             0 0 20px rgba(255, 255, 255, 0.5),
             0 0 20px rgba(255, 255, 255, 0.5),
             0 0 20px rgba(255, 255, 255, 0.5);
-
-            @include for-tablet-landscape-up {
+            @include for-tablet-portrait-up {
+                margin-top: 0;
+            }
+            @include for-desktop-up {
                 max-width: 60%;
             }
         }
