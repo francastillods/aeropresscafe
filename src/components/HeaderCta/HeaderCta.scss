@@ -3,23 +3,47 @@
 
 .header-cta {
     height: auto;
-    overflow: hidden;
     width: 100%;
 
-    h1 {
-        color: var(--dark);
-        font-size: to-rem($font-heading-xl);
-        max-width: 50%;
-    }
     figure {
         height: auto;
         margin: 0;
         width: 100%;
+
+        @include for-phone-only {
+            margin-top: to-rem($size-key * -20);
+        }
+        
+        @include for-tablet-portrait-up {
+            position: absolute;
+            top:0;
+            z-index: 888;
+        }
     }
     .header-cta_info {
-        padding-left: to-rem($size-key * 30);
-        position: absolute;
-        top:0;
-        padding-top: to-rem($size-key * 18);
+        padding-bottom: to-rem($size-key * 9);
+        position: relative;
+        z-index:999;
+
+        @include for-phone-only {
+            padding: 0 to-rem($size-key * 5);
+            a {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        
+        @include for-tablet-portrait-up {
+            padding-left: to-rem($size-key * 10);
+        }
+        
+        @include for-tablet-landscape-up {
+            padding-left: to-rem($size-key * 30);
+            padding-top: to-rem($size-key * 3);
+            
+            h1 {
+                max-width: 60%;
+            }
+        }
     }
 }

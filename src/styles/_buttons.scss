@@ -13,6 +13,7 @@ button,
     padding: to-rem($size-key * 2) to-rem($size-key * 4);
     text-decoration: none;
     width: auto;
+    width: fit-content;
 
 }
 .btn-primary {
