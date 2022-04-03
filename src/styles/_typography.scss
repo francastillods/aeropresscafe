@@ -1,0 +1,23 @@
+@use 'abstract/abstract' as *;
+@font-face {
+	font-family: "Inter";
+	src: url("../asstes/fonts/inter/Inter-Regular.ttf") format("truetype");
+}
+
+*,
+body {
+    font-family: $font-family-primary;
+	line-height: 1.5;
+}
+
+h1 {
+	color: var(--dark);
+	font-size: to-rem($font-heading-lg);
+	
+	@include for-phone-only {
+		font-size: to-rem($font-heading-lg);
+	}
+	@include for-tablet-landscape-up {
+		font-size: to-rem($font-heading-xl);
+	}
+}
