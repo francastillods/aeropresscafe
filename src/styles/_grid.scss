@@ -1,6 +1,20 @@
 @use '../styles/abstract/abstract' as *;
 
 .container {
-    margin: 0 auto;
-    max-width: $size-key * 21rem;
+
+    @include for-phone-only {
+        padding: 0 to-rem($size-key * 4);
+    }
+    @include for-tablet-portrait-up {
+        padding: 0 to-rem($size-key * 4);
+    }
+    @include for-tablet-landscape-up {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    @include for-desktop-up { 
+        max-width: $size-key * 21rem;
+    }
+    @include for-big-desktop-up {}
+
 }
