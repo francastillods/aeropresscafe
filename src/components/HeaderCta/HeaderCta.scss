@@ -3,8 +3,9 @@
 
 .header-cta {
     height: auto;
+    position: relative;
     width: 100%;
-    
+
     svg {
         position: relative;
         z-index: 999;
@@ -29,12 +30,20 @@
             position: absolute;
             top:0;
             z-index: 888;
+            
         }
     }
     .header-cta_info {
         padding-bottom: to-rem($size-key * 9);
         position: relative;
         z-index:999;
+
+        h1 {
+            text-shadow:
+            0 0 50px rgba(255, 255, 255, 0.8),
+            0 0 50px rgba(255, 255, 255, 0.8),
+            0 0 50px rgba(255, 255, 255, 0.8),
+        }
 
         @include for-phone-only {
             padding: 0 to-rem($size-key * 5);
@@ -54,7 +63,7 @@
             
             h1 {
                 max-width: 60%;
-            }
+              }
         }
     }
 }
