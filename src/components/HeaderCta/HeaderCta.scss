@@ -4,6 +4,17 @@
 .header-cta {
     height: auto;
     width: 100%;
+    
+    svg {
+        position: relative;
+        z-index: 999;
+        padding-top: to-rem($size-key * 4);
+
+        @include for-phone-only {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 
     figure {
         height: auto;
