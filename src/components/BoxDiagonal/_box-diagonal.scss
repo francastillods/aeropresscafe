@@ -14,6 +14,7 @@
             display: flex;
             justify-content: center;
             width: 100%;
+            margin-bottom: to-rem( $size-key * -13 );
 
             @include for-tablet-landscape-up {
                 align-items: center;
