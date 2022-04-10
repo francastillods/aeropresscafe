@@ -13,8 +13,8 @@
         figure {
             display: flex;
             justify-content: center;
-            width: 100%;
             margin-bottom: to-rem( $size-key * -13 );
+            width: 100%;
 
             @include for-tablet-landscape-up {
                 align-items: center;
