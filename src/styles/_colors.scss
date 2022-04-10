@@ -1,16 +1,22 @@
 :root {
   /* Main Palette */
-  --color-primary: rgba(241, 71, 29, 1);
-  --color-secondary: rgba(235, 201, 90, 1);
-  --color-dark: rgba(42,50,48, 1);
-  --color-pale: rgba(251,247,246, 1);
+  --color-primary: 241, 71, 29;
+  --color-secondary: 235, 201, 90;
+  --color-dark: 42,50,48;
+  --color-pale: 251,247,246;
+
+  /* Shades */
+  --color-secondary-sh20: 188, 161, 72;
+  --color-secondary-sh40: 141, 121, 54; 
+  --color-secondary-sh60: 94, 80, 36; 
+  --color-secondary-sh80: 47, 40, 18; 
 
   /* Grey Palette */
-  --color-grey-dark: rgba(153, 153, 153, 1);
-  --color-grey-medium: rgba(158, 154, 152, 1);
-  --color-grey-light: rgba(251, 247, 246, 1);
+  --color-grey-dark: 153, 153, 153;
+  --color-grey-medium: 158, 154, 152;
+  --color-grey-light: 251, 247, 246;
 
   /* B&W Palette */
-  --color-black: rgba(0, 0, 0, 1);
-  --color-white: rgba(255, 255, 255, 1);
+  --color-black: 0, 0, 0;
+  --color-white: 255, 255, 255;
 }

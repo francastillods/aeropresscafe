@@ -1,0 +1,40 @@
+@use '../../styles/abstract/abstract' as *;
+
+.box-diagonal {
+    background-image: linear-gradient(45deg, rgba(var(--color-secondary-sh20), 0.7) 20%, rgba( var(--color-secondary), 0.7 ) 80%);
+    margin-top: to-rem( $size-key * 6);
+    margin-top:0;
+    padding: 0;
+    transform: skewY(-2deg);
+
+    .container-flex {
+        transform: skewY(2deg);
+
+        figure {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            @include for-tablet-landscape-up {
+                align-items: center;
+                margin-top: 0;
+            }
+            
+            @include for-desktop-up {
+                margin-bottom: to-rem( $size-key * -22 );
+                margin-top: to-rem( $size-key * -14 );
+            }
+
+            picture {
+                width: 100%;
+
+                @include for-tablet-portrait-up {
+                    width: 60%;
+                }
+                @include for-tablet-landscape-up {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

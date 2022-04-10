@@ -1,0 +1,5 @@
+@use '../styles/abstract/abstract' as *;
+.fx-shadow {
+    -webkit-box-shadow: 0px to-rem($size-key) to-rem($size-key * 4 ) to-rem(calc($size-key / 2)) rgba(var(--color-black),0.5); 
+    box-shadow: 0px to-rem($size-key) to-rem($size-key * 4 ) to-rem(calc($size-key / 2)) rgba(var(--color-black),0.5);
+}

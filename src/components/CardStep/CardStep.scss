@@ -1,32 +1,45 @@
 @use '../../styles/abstract/abstract' as *;
 
 .card-step {
+    background-color: rgba( var(--color-grey-light), 1 );
     height: auto;
-    width: to-rem( $size-key * 82 );
-    background-color: var(--color-grey-light);
-    margin: to-rem( $size-key * 4) to-rem( $size-key * 8);
+    margin: to-rem( $size-key * 5) to-rem( $size-key * 6) to-rem($size-key);
+    max-width: to-rem( $size-key * 78 );
+    min-width: to-rem( $size-key * 55 );
 
     @include for-tablet-portrait-up {
         flex: 0 0 auto;
     }
+    @include for-phone-only {
+        max-width: to-rem( $size-key * 55 );
+    }
+    @include for-tablet-portrait-up {
+        max-width: to-rem( $size-key * 55 );
+    }
+    @include for-desktop-up {
+        max-width: to-rem( $size-key * 82 );
+    }
 
     h5 {
         align-items: center;
-        background-color: var( --color-secondary );
+        background-color: rgba( var( --color-secondary ), 1 );
         border-radius: to-rem( $size-key * 100 );
         display: flex;
         font-size: to-rem( $font-heading-sm );
         height: to-rem( $size-key * 10);
         justify-content: center;
         left: to-rem( $size-key * -5 );
-        margin: 0;
+        margin: to-rem( $size-key * -5 ) 0 0;
         position: relative;
-        top: to-rem( $size-key * -5 );
         width: to-rem( $size-key * 10);
     }
-
-    img {
-        mix-blend-mode: multiply;
+    figure {
+        margin-top: 0;
+        
+        img {
+            mix-blend-mode: multiply;
+            width: 100%;
+        }
     }
 
     h3 {

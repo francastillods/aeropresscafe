@@ -6,7 +6,7 @@
         padding: 0 to-rem($size-key * 4);
     }
     @include for-tablet-portrait-up {
-        padding: 0 to-rem($size-key * 4);
+        padding: 0 to-rem($size-key * 6);
     }
     @include for-tablet-landscape-up {
         margin: 0 auto;
@@ -15,6 +15,25 @@
     @include for-desktop-up { 
         max-width: $size-key * 21rem;
     }
-    @include for-big-desktop-up {}
+    
+    &-flex {
+        @extend .container;
+        display: flex;
+        flex-direction: column-reverse;
 
+        @include for-tablet-landscape-up {
+           flex-direction: row;
+        }
+    }
+}
+
+.column2 {
+    width: 100%;
+    margin:0;
+
+    @include for-tablet-portrait-up {
+        .column2 {
+            width: 49.99%;
+        }
+    }
 }

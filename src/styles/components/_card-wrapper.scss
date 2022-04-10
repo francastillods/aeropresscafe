@@ -2,18 +2,22 @@
 .card-wrapper {
     display: flex;
     justify-content: center;
+    margin-bottom: to-rem( $size-key * 12);
 
     @include for-phone-only {
         display: flex;
-        justify-content: flex-start;
         flex-wrap: nowrap;
+        justify-content: flex-start;
         overflow-x: auto;
     }
 
     @include for-tablet-portrait-up {
-        justify-content: flex-start;
         display: flex;
         flex-wrap: nowrap;
+        justify-content: flex-start;
         overflow-x: auto;
+    }
+    @include for-desktop-up {
+        justify-content: center;
     }
 }
