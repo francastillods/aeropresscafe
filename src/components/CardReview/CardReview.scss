@@ -1,0 +1,22 @@
+@use '../../styles/abstract/abstract' as *;
+
+.card-review {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+
+    .card-review_info {
+        height: to-rem( ($size-key * 90));
+        max-height: to-rem( ($size-key * 90));
+        overflow: hidden;
+        transition: max-height 1s linear;
+
+        &.card-review_info_show {
+            height: auto;
+            max-height: to-rem( ($size-key * 180));
+        }
+        
+    }
+}

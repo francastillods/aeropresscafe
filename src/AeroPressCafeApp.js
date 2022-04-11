@@ -3,9 +3,8 @@ import { BoxDiagonal } from './components/BoxDiagonal/BoxDiagonal';
 import { CardReview } from './components/CardReview/CardReview';
 import { CardStep } from './components/CardStep/CardStep';
 import { HeaderCta } from './components/HeaderCta/HeaderCta';
-import './asstes/data/dataEs.json';
 
-const data = require('./asstes/data/dataEs.json');
+const data = require('./assets/data/dataEs.json');
 
 export const AeroPressCafeApp = () => {
   return (
@@ -47,31 +46,36 @@ export const AeroPressCafeApp = () => {
         title = { data.HOME.SECTION_PRESENTATION.TITLE }
         txt = { data.HOME.SECTION_PRESENTATION.TXT }
       />
-
-      <CardReview 
-        rating = { data.HOME.SECTION_REVIEWS.REVIEW1.RATING }
-        title = { data.HOME.SECTION_REVIEWS.REVIEW1.TITLE }
-        name = { data.HOME.SECTION_REVIEWS.REVIEW1.NAME }
-        review = { data.HOME.SECTION_REVIEWS.REVIEW1.TXT }
-      />
-      <CardReview 
-        rating = { data.HOME.SECTION_REVIEWS.REVIEW2.RATING }
-        title = { data.HOME.SECTION_REVIEWS.REVIEW2.TITLE }
-        name = { data.HOME.SECTION_REVIEWS.REVIEW2.NAME }
-        review = { data.HOME.SECTION_REVIEWS.REVIEW2.TXT }
-      />
-      <CardReview 
-        rating = { data.HOME.SECTION_REVIEWS.REVIEW3.RATING }
-        title = { data.HOME.SECTION_REVIEWS.REVIEW3.TITLE }
-        name = { data.HOME.SECTION_REVIEWS.REVIEW3.NAME }
-        review = { data.HOME.SECTION_REVIEWS.REVIEW3.TXT }
-      />
-      <CardReview 
-        rating = { data.HOME.SECTION_REVIEWS.REVIEW4.RATING }
-        title = { data.HOME.SECTION_REVIEWS.REVIEW4.TITLE }
-        name = { data.HOME.SECTION_REVIEWS.REVIEW4.NAME }
-        review = { data.HOME.SECTION_REVIEWS.REVIEW4.TXT }
-      />
+      <section className="container-flex">
+        <CardReview 
+          rating = { data.HOME.SECTION_REVIEWS.REVIEW1.RATING }
+          title = { data.HOME.SECTION_REVIEWS.REVIEW1.TITLE }
+          name = { data.HOME.SECTION_REVIEWS.REVIEW1.NAME }
+          review = { data.HOME.SECTION_REVIEWS.REVIEW1.TXT }
+          className = 'column4'
+        />
+        <CardReview 
+          rating = { data.HOME.SECTION_REVIEWS.REVIEW2.RATING }
+          title = { data.HOME.SECTION_REVIEWS.REVIEW2.TITLE }
+          name = { data.HOME.SECTION_REVIEWS.REVIEW2.NAME }
+          review = { data.HOME.SECTION_REVIEWS.REVIEW2.TXT }
+          className = 'column4'
+        />
+        <CardReview 
+          rating = { data.HOME.SECTION_REVIEWS.REVIEW3.RATING }
+          title = { data.HOME.SECTION_REVIEWS.REVIEW3.TITLE }
+          name = { data.HOME.SECTION_REVIEWS.REVIEW3.NAME }
+          review = { data.HOME.SECTION_REVIEWS.REVIEW3.TXT }
+          className = 'column4'
+        />
+        <CardReview 
+          rating = { data.HOME.SECTION_REVIEWS.REVIEW4.RATING }
+          title = { data.HOME.SECTION_REVIEWS.REVIEW4.TITLE }
+          name = { data.HOME.SECTION_REVIEWS.REVIEW4.NAME }
+          review = { data.HOME.SECTION_REVIEWS.REVIEW4.TXT }
+          className = 'column4'
+        />
+      </section>
     </>
   )
 }

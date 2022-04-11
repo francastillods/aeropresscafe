@@ -1,5 +1,8 @@
 import React from 'react'
 import { randomKeyGen } from '../../helpers/randomKeyGen'
+import { BtnDropdown } from '../BtnDropdown/BtnDropdown'
+import { useState } from 'react'
+import './CardReview.scss'
 
 export const CardReview = ({ rating, title ,name, review }) => {
 
@@ -36,6 +39,11 @@ export const CardReview = ({ rating, title ,name, review }) => {
 
     const ratingStars = getStarsRating(rating);
 
+    const [ switchBtn, setSwitchBtn ] = useState(false);
+    const toogleSwitch = () => {
+        switchBtn ? setSwitchBtn(false) : setSwitchBtn(true)
+    }
+
     return (
     <div>
         <ul>
@@ -46,9 +54,16 @@ export const CardReview = ({ rating, title ,name, review }) => {
             }
         </ul>
         <div>
-            <h3>{ title }</h3>
-            <p>{ name }</p>
-            <p>{ review }</p>
+            <div className='card-review'>
+                <div className={ 'card-review_info ' + (switchBtn ? "card-review_info_show" : "") }>
+                    <h3>{ title }</h3>
+                    <p>{ name }</p>
+                    <p>{ review }</p>
+                </div>
+                <BtnDropdown 
+                 onClick ={ toogleSwitch }
+                 />
+            </div>
         </div>
     </div>
     )
