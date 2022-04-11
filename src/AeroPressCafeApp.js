@@ -1,43 +1,77 @@
 import React from 'react';
 import { BoxDiagonal } from './components/BoxDiagonal/BoxDiagonal';
+import { CardReview } from './components/CardReview/CardReview';
 import { CardStep } from './components/CardStep/CardStep';
 import { HeaderCta } from './components/HeaderCta/HeaderCta';
+import './asstes/data/dataEs.json';
+
+const data = require('./asstes/data/dataEs.json');
 
 export const AeroPressCafeApp = () => {
   return (
     <>
       <HeaderCta
-        srcSet ={ '/img/aeropress-preparar-cafe-2000x512.jpg 2000w, /img/aeropress-preparar-cafe-1800x512.jpg 1800w, /img/aeropress-preparar-cafe-1200x512.jpg 1200w, /img/aeropress-preparar-cafe-900x384.jpg 900w, /img/aeropress-preparar-cafe-600x420.jpg 600w, /img/aeropress-preparar-cafe-360x250.jpg 376w' }
-        imgAlt ='Preparar café con AeroPress'
-        claim ='Disfruta de café barista en casa respetando el medio ambiente'
-        cta = 'Comprar en Amazon'
-        href = '#'
-        title = 'título'
+        srcSet = { data.HOME.HEADER.IMG_SRC }
+        imgAlt = { data.HOME.HEADER.IMG_ALT }
+        claim = { data.HOME.HEADER.TITLE }
+        cta = { data.HOME.HEADER.CTA_BTN_TXT }
+        href = { data.HOME.HEADER.CTA_BTN_HREF }
+        title = { data.HOME.HEADER.CTA_BTN_TITLE }
       />
 
       <h2>Cómo preparar café con AeroPress</h2>
-      <div className="container card-wrapper">
+      <div className= 'container card-wrapper'>
         <CardStep
-          stepNumber = {'1'}
-          imgSrc = { '/img/step1.jpg' }
-          imgAlt = { 'paso 1'}
-          txt = { 'Añade agua y café' }
+          stepNumber = {data.HOME.SECTION_STEPS.STEP1.NUMBER}
+          imgSrc = {data.HOME.SECTION_STEPS.STEP1.IMG_SRC}
+          imgAlt = {data.HOME.SECTION_STEPS.STEP1.IMG_ALT}
+          txt = {data.HOME.SECTION_STEPS.STEP1.TXT} 
         />
         <CardStep
-          stepNumber = {'2'}
-          imgSrc = { '/img/step2.jpg' }
-          imgAlt = { 'paso 2'}
-          txt = { 'Remueve y prepara en pocos segundos' }
+          stepNumber = {data.HOME.SECTION_STEPS.STEP2.NUMBER}
+          imgSrc = {data.HOME.SECTION_STEPS.STEP2.IMG_SRC}
+          imgAlt = {data.HOME.SECTION_STEPS.STEP2.IMG_ALT}
+          txt = {data.HOME.SECTION_STEPS.STEP2.TXT} 
         />
         <CardStep
-          stepNumber = {'3'}
-          imgSrc = { '/img/step3.jpg' }
-          imgAlt = { 'paso 3'}
-          txt = { 'Presiona el café dentro de la taza' }
+          stepNumber = {data.HOME.SECTION_STEPS.STEP3.NUMBER}
+          imgSrc = {data.HOME.SECTION_STEPS.STEP3.IMG_SRC}
+          imgAlt = {data.HOME.SECTION_STEPS.STEP3.IMG_ALT}
+          txt = {data.HOME.SECTION_STEPS.STEP3.TXT} 
         />
       </div>
 
-      <BoxDiagonal />
+      <BoxDiagonal
+        imgSrcSet = { data.HOME.SECTION_PRESENTATION.IMG_SRC }
+        imgAlt = { data.HOME.SECTION_PRESENTATION.IMG_ALT }
+        title = { data.HOME.SECTION_PRESENTATION.TITLE }
+        txt = { data.HOME.SECTION_PRESENTATION.TXT }
+      />
+
+      <CardReview 
+        rating = { data.HOME.SECTION_REVIEWS.REVIEW1.RATING }
+        title = { data.HOME.SECTION_REVIEWS.REVIEW1.TITLE }
+        name = { data.HOME.SECTION_REVIEWS.REVIEW1.NAME }
+        review = { data.HOME.SECTION_REVIEWS.REVIEW1.TXT }
+      />
+      <CardReview 
+        rating = { data.HOME.SECTION_REVIEWS.REVIEW2.RATING }
+        title = { data.HOME.SECTION_REVIEWS.REVIEW2.TITLE }
+        name = { data.HOME.SECTION_REVIEWS.REVIEW2.NAME }
+        review = { data.HOME.SECTION_REVIEWS.REVIEW2.TXT }
+      />
+      <CardReview 
+        rating = { data.HOME.SECTION_REVIEWS.REVIEW3.RATING }
+        title = { data.HOME.SECTION_REVIEWS.REVIEW3.TITLE }
+        name = { data.HOME.SECTION_REVIEWS.REVIEW3.NAME }
+        review = { data.HOME.SECTION_REVIEWS.REVIEW3.TXT }
+      />
+      <CardReview 
+        rating = { data.HOME.SECTION_REVIEWS.REVIEW4.RATING }
+        title = { data.HOME.SECTION_REVIEWS.REVIEW4.TITLE }
+        name = { data.HOME.SECTION_REVIEWS.REVIEW4.NAME }
+        review = { data.HOME.SECTION_REVIEWS.REVIEW4.TXT }
+      />
     </>
   )
 }

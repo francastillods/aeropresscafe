@@ -1,0 +1,89 @@
+{
+    "HOME": {
+        "HEADER": {
+            "TITLE": "Disfruta de café barista en casa respetando el medio ambiente",
+            "CTA_BTN_TXT": "Comprar en Amazon",
+            "CTA_BTN_HREF": "#",
+            "CTA_BTN_TITLE": "Ir a Amazon",
+            "IMG_SRC": "/img/aeropress-preparar-cafe-2000x512.jpg 2000w, /img/aeropress-preparar-cafe-1800x512.jpg 1800w, /img/aeropress-preparar-cafe-1200x512.jpg 1200w, /img/aeropress-preparar-cafe-900x384.jpg 900w, /img/aeropress-preparar-cafe-600x420.jpg 600w, /img/aeropress-preparar-cafe-360x250.jpg 376w",
+            "IMG_ALT": "Preparar café con AeroPress"
+        },
+        "SECTION_STEPS": {
+            "STEPS_TITLE": "Cómo preparar café con Aeropress",
+            "STEP1": {
+                "NUMBER": "1",
+                "IMG_SRC": "/img/step1.jpg",
+                "IMG_ALT": "paso 1",
+                "TXT": "Añade agua y café"
+            },
+            "STEP2": {
+                "NUMBER": "2",
+                "IMG_SRC": "/img/step2.jpg",
+                "IMG_ALT": "paso 2",
+                "TXT": "Remueve y prepara en pocos segundos"
+            },
+            "STEP3": {
+                "NUMBER": "3",
+                "IMG_SRC": "/img/step3.jpg",
+                "IMG_ALT": "paso 3",
+                "TXT": "Presiona el café dentro de la taza"
+            }
+        },
+        "SECTION_PRESENTATION": {
+            "IMG_SRC": "/img/preparar-cafe-aeropress.png",
+            "IMG_ALT": "imgAlt",
+            "TITLE": "Prepárate el café que más te guste",
+            "TXT": [
+                    "Aeropress te abre un mundo de posibilidades, al no depender de cápsulas compatibles, puedes preparar todo tipo de café y lo más importante: prepara café a medida como más te guste.",
+                    "Elige el tipo que más te guta: arábica, ibérica, robusta... Decide el origen: Colombia, Brasil, Etiopia, si es ecológico, de comercio justo... mueleló tú mismo o compralo molido, añade la cantidad de agua que sea de tu agrado.",
+                    "Aeropress es el aliado perfecto para poder disfrutar de café de máxima calidad, sin condiciones y 100% personalizado."
+                ]
+        },
+        "SECTION_REVIEWS": {
+            "REVIEW1": {
+                "RATING": 5,
+                "TITLE": "\"Justo lo que buscaba\"",
+                "NAME": "Luis Bordeje",
+                "TXT": [
+                    "Andaba yo buscando una alternativa a mi máquina de café de cápsulas que estaba a punto de reventar y encontré esta alternativa. Necesitaba un sistema que fuera rápido, limpio y ocupase poco espacio una vez recogido, por lo que la aeropress era la alternativa ideal.",
+                    "Es una cafetera que se compone de dos cilindros de plástico. En uno se introduce el agua caliente con el café molido y el otro actúa como un émbolo introduciendo aire a presión y empujando la mezcla de agua y café a través de un filtro de papel.",
+                    "Su funcionamiento es sencillísimo y hay multitud de recetas en internet, en las que variando tipos de cafe, cantidades, temperatura del agua o método de extracción (normal o invertido) se consiguen resultados muy diferentes.",
+                    "Una vez que acabas separas las dos partes y las lavas directamente debajo del grifo, lo que la hace la mejor alternativa cuando te vas de viaje y quieres llevarte cafetera, con un termo de agua caliente y un poco de café molido te preparas un café en cualquier sitio.",
+                    "El café que se obtiene con este sistema es intenso, pero no esperes la intensidad de un espresso puesto que se necesitaría mucha más presión en la extracción. Es más parecido al café de una cafetera de filtro pero con menos acidez y más aromático. Yo estoy muy contento con ella, la uso todos los días y me ha permitido volver a disfrutar del buen café en casa."
+                ]
+            },
+            "REVIEW2": {
+                "RATING": 5,
+                "TITLE": "\"Super Contenta\"",
+                "NAME": "Marta",
+                "TXT": [
+                    "Me encanta esta cafetera, si eres amante del café de filtro, hazte con una, es fácil de usar y transportar.",
+                    "Si tienes poca paciencia esta no es tu cafetera, esta cafetera es para disfrutar del ritual completo del café. Tiene una capacidad para dos cafés, el café como he comentado es un café de filtro, tipo americano.",
+                    "Yo caliento el agua y la dejo enfriar hasta unos 80 grados, mientras enfría pongo los granos de café en el molinillo (una cucharada aproximadamente) coloco el filtro en la base, lo humedezco, cierro, añado el café molido, pongo la cafetera sobre la taza y cuando el agua esta a la temperatura correcta, lleno lentamente de agua hasta el numero 2 y medio, remuevo lentamente durante 30 segundos y entonces meto la prensa y poco a poco voy sacando el café hasta el final.",
+                    "Muy importante, nada mas terminar de hacer el proceso, límpiala, es mucho mas fácil y te durará más tiempo."
+                ]
+            },
+            "REVIEW3": {
+                "RATING": 5,
+                "TITLE": "\"Café excelente, ligero y práctico\"",
+                "NAME": "Ivan Perez Garcia",
+                "TXT": [
+                    "Perfecto para usar en casa o cuando te vas de camping. Aconsejable tener una hervidora de agua a mano para cada vez que quieras un café.",
+                    "Yo uso 2 o 3 filtros para aplicar más presión y que salga aún más intenso el café. Y luego limpio los filtros y los reuso durante 1 mes o más. Los filtros que lleva te durarán para años.",
+                    "Es increíble cómo algo tan sencillo puede sacar un café mucho más suave y aromático, pero tranquilo porque consigue sacar la cafeína también.",
+                    "Sin ser un entendido del tema, yo lo veo como un híbrido entre un expresso italiano a muchos bares y un café infusionado normal mucho más suave. El resultado es magnífico."
+                ]
+            },
+            "REVIEW4": {
+                "RATING": 5,
+                "TITLE": "\"Genial cafetera\"",
+                "NAME": "Paloma",
+                "TXT": [
+                    "Está muy bien. Yo usaba hasta ahora una de esas cafeteras italianas de toda la vida, y desde que recibí la aeropress se ha convertido en mi cafetera del día a día.",
+                    "Ahora me queda trastear un poco con los “ajustes” digamos, el tiempo de percolado, la cantidad de agua/café... pero si sigues las instrucciones del manual, sin complicaciones, te sale un café buenísimo, y eso que uso uno premolido típico. Esa será mi próxima compra, un molinillo para moler el café al momento de usar la aero.",
+                    "Si normalmente haces café para una persona solo la recomiendo totalmente."
+                ]
+            }
+        }
+    }
+}
