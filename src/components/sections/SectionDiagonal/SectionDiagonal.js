@@ -1,8 +1,8 @@
-import { ImgWebp } from '../ImgWebp';
-import { randomKeyGen } from '../../helpers/randomKeyGen';
-import './_box-diagonal.scss';
+import { ImgWebp } from '../../ImgWebp';
+import { randomKeyGen } from '../../../helpers/randomKeyGen';
+import './SectionDiagonal.scss';
 
-export const BoxDiagonal = ({ imgSrcSet, imgAlt, title, txt }) => {
+export const SectionDiagonal = ({ imgSrcSet, imgAlt, title, txt }) => {
   return (
     <section className='box-diagonal'>
         <div className='container-flex'>

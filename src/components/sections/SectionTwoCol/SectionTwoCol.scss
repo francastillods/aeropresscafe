@@ -1,0 +1,11 @@
+@use '../../../styles/abstract/abstract' as *;
+
+.container-flex.two-col-section {
+    margin-top: 32px;
+
+    figure {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}

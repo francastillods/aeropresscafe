@@ -85,6 +85,16 @@
                 ]
             },
             "BTN_AMZ" : "Ver valoraciones de Amazon"
-        }
+        },
+        "SECTION_RECYCLING" : {
+            "TITLE": "Ayuda a mantener limpio el planeta",
+            "TXT": [
+                "Cada minuto se fabrican alrededor de 39 000 cápsulas de café en todo el mundo y hasta 29 000 acaban en vertederos*. Aunque se empiezan a hacer esfuerzos en el reciclado y segunda vida de las cápsulas la gran mayoría acaban alimentando montañas en vertederos, cápsulas desechadas prevaleceran durante décadas e incluso cientos de años algunas, hasta desaparecer.",
+                "Aeropress dura años y no generá residuos adicionales. Ahórrale al planeta más de 1000 cápsulas cada año. Además, no estar obligado a tener que comprar café de un tipo o marca determinado te da la oportunidad de elegir café ecológico y de comercio justo.",
+                "Disfurta del café mientras le haces un favor al medio ambiente."
+            ],
+            "IMG_SRC": "/img/reciclar-capsulas-cafe-wh.jpg",
+            "IMG_ALT": "Reciclaje de cápsulas de café"
+        } 
     }
 }

@@ -19,7 +19,7 @@
     &-flex {
         @extend .container;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
 
         @include for-tablet-landscape-up {
            flex-direction: row;

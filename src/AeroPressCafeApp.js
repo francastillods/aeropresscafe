@@ -1,8 +1,9 @@
 import React from 'react';
-import { BoxDiagonal } from './components/BoxDiagonal/BoxDiagonal';
+import { SectionDiagonal } from './components/sections/SectionDiagonal/SectionDiagonal';
 import { CardReview } from './components/CardReview/CardReview';
 import { CardStep } from './components/CardStep/CardStep';
 import { HeaderCta } from './components/HeaderCta/HeaderCta';
+import { SectionTwoCol } from './components/sections/SectionTwoCol/SectionTwoCol';
 
 const data = require('./assets/data/dataEs.json');
 
@@ -40,7 +41,7 @@ export const AeroPressCafeApp = () => {
         />
       </div>
 
-      <BoxDiagonal
+      <SectionDiagonal
         imgSrcSet = { data.HOME.SECTION_PRESENTATION.IMG_SRC }
         imgAlt = { data.HOME.SECTION_PRESENTATION.IMG_ALT }
         title = { data.HOME.SECTION_PRESENTATION.TITLE }
@@ -77,8 +78,14 @@ export const AeroPressCafeApp = () => {
         />
       </section>
       <div className= 'flex-center'>
-        <button class="btn btn-secondary">{ data.HOME.SECTION_REVIEWS.BTN_AMZ }</button>
+        <button className="btn btn-secondary">{ data.HOME.SECTION_REVIEWS.BTN_AMZ }</button>
       </div>
+      <SectionTwoCol
+        title = { data.HOME.SECTION_RECYCLING.TITLE  }
+        txt = { data.HOME.SECTION_RECYCLING.TXT }
+        imgSrcSet = {data.HOME.SECTION_RECYCLING.IMG_SRC }
+        imgAlt = {data.HOME.SECTION_RECYCLING.IMG_ALT}
+      />
     </>
   )
 }

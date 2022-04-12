@@ -1,4 +1,4 @@
-@use '../../styles/abstract/abstract' as *;
+@use '../../../styles/abstract/abstract' as *;
 
 .box-diagonal {
     background-image: linear-gradient(45deg, rgba(var(--color-secondary-sh20), 0.7) 20%, rgba( var(--color-secondary), 0.7 ) 80%);
@@ -8,6 +8,11 @@
 
     .container-flex {
         transform: skewY(2deg);
+        flex-direction: column-reverse;
+
+        @include for-tablet-landscape-up {
+            flex-direction: row;
+         }
 
         figure {
             display: flex;
