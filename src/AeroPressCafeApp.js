@@ -17,6 +17,8 @@ export const AeroPressCafeApp = () => {
         cta = { data.HOME.HEADER.CTA_BTN_TXT }
         href = { data.HOME.HEADER.CTA_BTN_HREF }
         title = { data.HOME.HEADER.CTA_BTN_TITLE }
+        rel= "noopener  noreferrer" 
+        target = '_blank'
       />
 
       <h2>Cómo preparar café con AeroPress</h2>
@@ -78,7 +80,13 @@ export const AeroPressCafeApp = () => {
         />
       </section>
       <div className= 'flex-center'>
-        <button className="btn btn-secondary">{ data.HOME.SECTION_REVIEWS.BTN_AMZ }</button>
+        <a className="btn btn-secondary"
+          href = { data.HOME.SECTION_REVIEWS.BTN_AMZ_HREF }
+          title = { data.HOME.SECTION_REVIEWS.BTN_TITLE }
+          rel= "noopener  noreferrer" 
+          target = '_blank'
+
+        >{ data.HOME.SECTION_REVIEWS.BTN_AMZ }</a>
       </div>
       <SectionTwoCol
         title = { data.HOME.SECTION_RECYCLING.TITLE  }

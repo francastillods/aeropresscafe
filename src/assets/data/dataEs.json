@@ -3,7 +3,7 @@
         "HEADER": {
             "TITLE": "Disfruta de café barista en casa respetando el medio ambiente",
             "CTA_BTN_TXT": "Comprar en Amazon",
-            "CTA_BTN_HREF": "#",
+            "CTA_BTN_HREF": "https://amzn.to/3LTq630",
             "CTA_BTN_TITLE": "Ir a Amazon",
             "IMG_SRC": "/img/aeropress-preparar-cafe-2000x512.jpg 2000w, /img/aeropress-preparar-cafe-1800x512.jpg 1800w, /img/aeropress-preparar-cafe-1200x512.jpg 1200w, /img/aeropress-preparar-cafe-900x384.jpg 900w, /img/aeropress-preparar-cafe-600x420.jpg 600w, /img/aeropress-preparar-cafe-360x250.jpg 376w",
             "IMG_ALT": "Preparar café con AeroPress"
@@ -84,7 +84,9 @@
                     "Si normalmente haces café para una persona solo la recomiendo totalmente."
                 ]
             },
-            "BTN_AMZ" : "Ver valoraciones de Amazon"
+            "BTN_AMZ" : "Ver valoraciones de Amazon",
+            "BTN_AMZ_HREF" : "https://amzn.to/3LTq630",
+            "BTN_AMZ_TITLE" : "Ver en Amazon"
         },
         "SECTION_RECYCLING" : {
             "TITLE": "Ayuda a mantener limpio el planeta",
