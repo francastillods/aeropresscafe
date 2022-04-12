@@ -2,8 +2,7 @@
 
 .box-diagonal {
     background-image: linear-gradient(45deg, rgba(var(--color-secondary-sh20), 0.7) 20%, rgba( var(--color-secondary), 0.7 ) 80%);
-    margin-top: to-rem( $size-key * 6);
-    margin-top:0;
+    margin:to-rem( $size-key * 14) 0 to-rem( $size-key * 14);
     padding: 0;
     transform: skewY(-2deg);
 

@@ -46,7 +46,7 @@ export const AeroPressCafeApp = () => {
         title = { data.HOME.SECTION_PRESENTATION.TITLE }
         txt = { data.HOME.SECTION_PRESENTATION.TXT }
       />
-      <section className="container-flex">
+      <section className="container card-wrapper">
         <CardReview 
           rating = { data.HOME.SECTION_REVIEWS.REVIEW1.RATING }
           title = { data.HOME.SECTION_REVIEWS.REVIEW1.TITLE }
@@ -76,6 +76,9 @@ export const AeroPressCafeApp = () => {
           className = 'column4'
         />
       </section>
+      <div className= 'flex-center'>
+        <button class="btn btn-secondary">{ data.HOME.SECTION_REVIEWS.BTN_AMZ }</button>
+      </div>
     </>
   )
 }

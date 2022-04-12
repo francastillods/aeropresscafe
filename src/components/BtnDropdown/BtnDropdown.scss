@@ -1,7 +1,6 @@
 @use '../../styles/abstract/abstract' as *;
 
-.btn-dropdown {
-    -webkit-box-shadow: 0px to-rem($size-key) to-rem($size-key * 2 ) to-rem(calc($size-key / 2)) rgba(var(--color-black),0.3); 
+.btn-dropdown { 
     align-items: center;
     background-color: rgba( var(--color-white) ,1 );
     border-radius: to-rem($size-key * 20);

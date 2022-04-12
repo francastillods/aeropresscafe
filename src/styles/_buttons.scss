@@ -19,3 +19,8 @@ button,
     background-color: rgba( var(--color-primary), 1);
     color: rgba( var(--color-white), 1 );
 }
+.btn-secondary {
+    background-color: rgba( var(--color-secondary), 1);
+    color: rgba( var(--color-dark), 1 );
+    border: solid 2px rgba( var(--color-secondary), 1 );
+}

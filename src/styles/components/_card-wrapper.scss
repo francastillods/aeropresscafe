@@ -2,7 +2,7 @@
 .card-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: to-rem( $size-key * 12);
+    margin-bottom: to-rem( $size-key * 4);
 
     @include for-phone-only {
         display: flex;
