@@ -20,7 +20,7 @@
         max-width: to-rem( $size-key * 82 );
     }
 
-    h5 {
+    .step-number {
         align-items: center;
         background-color: rgba( var( --color-secondary ), 1 );
         border-radius: to-rem( $size-key * 100 );

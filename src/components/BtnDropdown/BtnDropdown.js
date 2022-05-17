@@ -14,7 +14,7 @@ export const BtnDropdown = ( { onClick } ) => {
         switchToogleBtn();
     }
   return (
-    <button className={'btn-dropdown ' + (toogleButton ? "btn-dropdown_rotate" : "")} onClick={ btnFunctions }>
+    <button className={'btn-dropdown ' + (toogleButton ? "btn-dropdown_rotate" : "")} onClick={ btnFunctions } aria-label='Desplegar'>
         <ArrowDown />
     </button>
   )

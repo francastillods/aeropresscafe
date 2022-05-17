@@ -4,7 +4,7 @@ import './CardStep.scss';
 export const CardStep = ( {stepNumber, imgSrc, imgAlt, txt }) => {
   return (
     <div className="card-step">
-        <h5>{ stepNumber }</h5>
+        <span class="step-number">{ stepNumber }</span>
         <figure>
             <img src={ imgSrc } alt={ imgAlt }></img>
         </figure>
