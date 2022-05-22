@@ -21,7 +21,7 @@ export const AeroPressCafeApp = () => {
         target = '_blank'
       />
 
-      <h2>Cómo preparar café con AeroPress</h2>
+      <h2>{data.HOME.SECTION_STEPS.STEPS_TITLE}</h2>
       <div className= 'container card-wrapper'>
         <CardStep
           stepNumber = {data.HOME.SECTION_STEPS.STEP1.NUMBER}
