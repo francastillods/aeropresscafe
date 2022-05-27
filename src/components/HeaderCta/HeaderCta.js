@@ -19,7 +19,7 @@ export const HeaderCta = ({srcSet, imgAlt, claim, cta, href, title}) => {
               <Logo />
               <div className='header-cta_info'>
                 <h1>{ claim }</h1>
-                <a className='btn btn-primary' href={ href } title={ title } target="_self">{ cta }</a>
+                <a className='btn btn-primary' href={ href } title={ title } rel= "noopener  noreferrer" target="_blank">{ cta }</a>
               </div>
             </div>
         </div>

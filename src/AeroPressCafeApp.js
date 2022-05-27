@@ -17,8 +17,6 @@ export const AeroPressCafeApp = () => {
         cta = { data.HOME.HEADER.CTA_BTN_TXT }
         href = { data.HOME.HEADER.CTA_BTN_HREF }
         title = { data.HOME.HEADER.CTA_BTN_TITLE }
-        rel= "noopener  noreferrer" 
-        target = '_blank'
       />
 
       <h2>{data.HOME.SECTION_STEPS.STEPS_TITLE}</h2>
